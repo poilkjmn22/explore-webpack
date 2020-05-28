@@ -2,9 +2,10 @@
 // import "regenerator-runtime/runtime";
 
 // import {fib} from './utils/generator.js';
+import "./styles/index.scss";
 
-let arr = [1,2,3].map(d => Math.pow(d, 2))
-console.log(arr);
+let isIncludes = [1,2,3].includes(2)
+console.log(isIncludes);
 
 // for (var x of fib(10)) {
 //     console.log(x); // 依次输出0, 1, 1, 2, 3, ...
@@ -18,7 +19,7 @@ console.log(arr);
 async function asyncFn(){
   const res = await new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(6)
+      resolve(7)
     }, 2000)
   })
   console.dir(res);
