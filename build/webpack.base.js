@@ -14,10 +14,6 @@ module.exports = {
             use: {
                 loader: 'babel-loader'
             }
-        }, {
-            test: /\.s[ac]ss$/i,
-            exclude: /(node_modules|bower_components)/,
-            use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     },
     plugins: [

@@ -19,7 +19,7 @@ console.log(isIncludes);
 async function asyncFn(){
   const res = await new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(7)
+      resolve(17)
     }, 2000)
   })
   console.dir(res);
