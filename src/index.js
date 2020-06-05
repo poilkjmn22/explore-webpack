@@ -18,11 +18,28 @@ console.log(isIncludes);
 
 async function asyncFn(){
   const res = await new Promise((resolve, reject) => {
+    // error()
     setTimeout(() => {
-      resolve(17)
+      resolve(1700  )
     }, 2000)
   })
   console.dir(res);
 }
 
 asyncFn()
+
+window.addEventListener('unhandledrejection', e => {
+  console.log("unhandledrejection", e);
+})
+
+window.addEventListener('error', args => {
+  console.dir(args);
+  return false;
+})
+
+window.onerror = function(msg, url, line, col, error){
+  console.dir(msg);
+  return false;
+}
+
+a = b.c.d
